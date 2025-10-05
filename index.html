@@ -1,214 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Campus Clubs • Explore & Join</title>
-  <meta name="description" content="Discover all campus clubs, what they do, and where they meet." />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <title>Movies Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="#">
-        <span class="brand__logo" aria-hidden="true">🎓</span>
-        <span class="brand__text">Campus Clubs</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#clubs" class="nav__link">Clubs</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#contact" class="nav__link">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero" role="region" aria-label="Hero">
-    <div class="container hero__inner">
-      <div class="hero__copy">
-        <h1 class="hero__title">Find a club. Build a community.</h1>
-        <p class="hero__subtitle">Explore student clubs, their activities, and meeting venues across campus.</p>
-        <form class="filters" role="search" aria-label="Filter clubs">
-          <input type="search" name="q" id="q" class="input" placeholder="Search clubs by name or activity" aria-label="Search clubs" />
-          <select name="category" id="category" class="select" aria-label="Filter by category">
-            <option value="">All categories</option>
-            <option value="arts">Arts</option>
-            <option value="music">Music</option>
-            <option value="dance">Dance</option>
-            <option value="film">Film & Photography</option>
-            <option value="literary">Literary</option>
-            <option value="craft">Art & Craft</option>
-            <option value="leadership">Leadership</option>
-          </select>
-          <button type="submit" class="btn btn--primary">Filter</button>
-        </form>
-      </div>
-      <div class="hero__visual" aria-hidden="true">
-        <div class="orb orb--one"></div>
-        <div class="orb orb--two"></div>
-        <div class="orb orb--three"></div>
-      </div>
-    </div>
-  </section>
-
-  <main id="main" class="main container">
-    <section id="clubs" class="section">
-      <div class="section__head">
-        <h2 class="section__title">Clubs directory</h2>
-        <p class="section__subtitle">Browse featured clubs and discover where they meet.</p>
-      </div>
-
-      <div class="grid">
-        <article class="card" data-category="film">
-          <header class="card__head">
-            <span class="badge">Film & Photography</span>
-            <h3 class="card__title">Filmmaking & Photography Club</h3>
-          </header>
-          <p class="card__text">Hands-on visual storytelling, cinematography, editing, and still photography with peer critiques and screenings.</p>
-          <p class="card__meta"><strong>Venue:</strong> Near Nilgiri Boys Hostel, old Naturopathy OPD</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost" aria-label="Filmmaking & Photography Club details">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="music">
-          <header class="card__head">
-            <span class="badge">Music</span>
-            <h3 class="card__title">Music Club (Swarsiddhi Musicity)</h3>
-          </header>
-          <p class="card__text">Vocal and instrumental jams, workshops, and stage performances across genres for all skill levels.</p>
-          <p class="card__meta"><strong>Venue:</strong> Near Nilgiri Boys Hostel, old Naturopathy OPD</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="dance">
-          <header class="card__head">
-            <span class="badge">Dance</span>
-            <h3 class="card__title">Nrityangan Club</h3>
-          </header>
-          <p class="card__text">Indian classical and contemporary practice sessions, choreography labs, and cultural showcases.</p>
-          <p class="card__meta"><strong>Venue:</strong> C Block - 002, Ground Floor</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="leadership">
-          <header class="card__head">
-            <span class="badge">Leadership</span>
-            <h3 class="card__title">Majesty Club</h3>
-          </header>
-          <p class="card__text">Public speaking, event leadership, and peer mentoring to develop confidence and influence.</p>
-          <p class="card__meta"><strong>Venue:</strong> C Block - 220, 2nd Floor</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="arts">
-          <header class="card__head">
-            <span class="badge">Arts</span>
-            <h3 class="card__title">Artsy Painting Club</h3>
-          </header>
-          <p class="card__text">Painting circles, critiques, and campus exhibitions across watercolor, acrylics, and mixed media.</p>
-          <p class="card__meta"><strong>Venue:</strong> Behind Himalya Hostel</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="literary">
-          <header class="card__head">
-            <span class="badge">Literary</span>
-            <h3 class="card__title">Literacy Club (Engwings)</h3>
-          </header>
-          <p class="card__text">Reading circles, creative writing, debates, and publication opportunities for budding writers.</p>
-          <p class="card__meta"><strong>Venue:</strong> R012, Ground Floor, A Block</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-
-        <article class="card" data-category="craft">
-          <header class="card__head">
-            <span class="badge">Art & Craft</span>
-            <h3 class="card__title">Kala Kutir Art & Craft Club</h3>
-          </header>
-          <p class="card__text">Craft-making, upcycling, and installation art for campus drives and fests.</p>
-          <p class="card__meta"><strong>Venue:</strong> Behind Himalya Hostel</p>
-          <footer class="card__actions">
-            <a href="#" class="btn btn--ghost">Learn more</a>
-            <a href="#contact" class="btn btn--primary">Join</a>
-          </footer>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section__head">
-        <h2 class="section__title">About</h2>
-      </div>
-      <p class="lead">This page helps students explore clubs, discover activities, and locate venues—built with semantic HTML and a professional, responsive CSS system.</p>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section__head">
-        <h2 class="section__title">Contact</h2>
-      </div>
-      <form class="form" action="#" method="post">
-        <div class="form__row">
-          <div class="form__field">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" class="input" required />
-          </div>
-          <div class="form__field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" class="input" required />
-          </div>
+    <div class="topnav">
+        <a class="active" href="#">Movies Site</a>
+        <div class="search-container">
+            <form role="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search..">
+            </form>
         </div>
-        <div class="form__row">
-          <div class="form__field">
-            <label for="club">Club of interest</label>
-            <select id="club" name="club" class="select" required>
-              <option value="">Select a club</option>
-              <option>Filmmaking & Photography</option>
-              <option>Music (Swarsiddhi Musicity)</option>
-              <option>Nrityangan</option>
-              <option>Majesty</option>
-              <option>Artsy Painting</option>
-              <option>Literacy (Engwings)</option>
-              <option>Kala Kutir Art & Craft</option>
-            </select>
-          </div>
-        </div>
-        <div class="form__row">
-          <div class="form__field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" class="textarea" placeholder="Tell us about interests or availability..."></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn--primary">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__text">© Campus Clubs • HTML + CSS only</p>
     </div>
-  </footer>
+
+    <div style="padding-left:16px">
+
+    <section id="section">
+            <!-- <div class="row">
+            <div class="column">
+                <div class="card">
+                    <center><img src="https://www.filmibeat.com/ph-big/2023/01/animal-2023_167264941510.jpg" class="thumbnail"></center>
+                    <h3>Movie Title</h3>
+                </div>
+            </div>
+        </div> -->
+     </section>
+
 </body>
+<script src="script.js"></script>
 </html>
