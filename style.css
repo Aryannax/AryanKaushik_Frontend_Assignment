@@ -50,6 +50,13 @@ input{
     padding: 6px 9px;
 }
 
+#section{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
 .thumbnail{
     height: 350px;
     width:300px;
@@ -68,5 +75,6 @@ input{
     text-align: center;
     background-color: #151f30
 }
+
 
 
