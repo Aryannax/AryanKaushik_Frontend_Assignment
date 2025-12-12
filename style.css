@@ -33,7 +33,7 @@ h3{
 }
 
 form{
-    background-color: #151f30;
+    background-color: #243450;
     width: 300px;
     height: 43px;
     border-radius: 11px;
@@ -50,6 +50,12 @@ input{
     padding: 6px 9px;
 }
 
+.thumbnail{
+    height: 350px;
+    width:300px;
+    border-radius: 19px;
+}
+
 #section{
     display: flex;
     flex-wrap: wrap;
@@ -57,24 +63,16 @@ input{
     justify-content: space-around;
 }
 
-.thumbnail{
-    height: 350px;
-    width:300px;
-    border-radius: 19px;
-}
-
 .column{
-    float: left;
-    width: 25%;
-    padding: 10px 10px;
+    width: 400px;
+    padding: 10px 10px; 
 }
 
 .card{
     border-radius: 19px;
     padding: 15px;
     text-align: center;
-    background-color: #151f30
+    background-color: #1e2a3f
 }
-
 
 
