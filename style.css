@@ -50,17 +50,17 @@ input{
     padding: 6px 9px;
 }
 
-.thumbnail{
-    height: 350px;
-    width:300px;
-    border-radius: 19px;
-}
-
 #section{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
+}
+
+.thumbnail{
+    height: 350px;
+    width:300px;
+    border-radius: 19px;
 }
 
 .column{
@@ -74,6 +74,7 @@ input{
     text-align: center;
     background-color: #1e2a3f
 }
+
 
 
 
